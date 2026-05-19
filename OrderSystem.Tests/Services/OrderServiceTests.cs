@@ -14,6 +14,7 @@ namespace OrderSystem.Tests.Services
     public class OrderServiceTests
     {
         [Fact]
+        [Trait("Category", "Unit")]
         public void CreateOrder_ShouldSaveOrder_AndPublishEvent()
         {
             // Arrange

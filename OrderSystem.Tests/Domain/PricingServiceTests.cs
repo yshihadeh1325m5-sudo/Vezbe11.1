@@ -11,6 +11,7 @@ namespace OrderSystem.Tests.Domain
     public class PricingServiceTests
     {
         [Fact]
+        [Trait("Category","Unit")]
         public void Calculate_WhenItemsExist_ReturnsCorrectTotal()
         {
             // Arrange

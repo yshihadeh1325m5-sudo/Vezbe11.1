@@ -8,6 +8,7 @@ namespace OrderSystem.Tests.Infrastructure
     public class JsonOrderRepositoryTests
     {
         [Fact]
+        [Trait("Category", "Integration")]
         public void Add_ShouldSaveOrderToJsonFile()
         {
             var filePath = Path.GetTempPath();

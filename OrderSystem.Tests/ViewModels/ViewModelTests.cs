@@ -14,6 +14,7 @@ namespace OrderSystem.Tests.ViewModels
     public class ViewModelTests
     {
         [Fact]
+        [Trait("Category", "Unit")]
         public void CreateOrder_ShouldCallCommandService_AndRefreshOrders()
         {
             //Arrange

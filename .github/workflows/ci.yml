@@ -35,7 +35,7 @@ jobs:
 
   int-test:
     runs-on: windows-latest
-    needs: unit-tests
+    needs: unit-test
     steps:  
       - uses: actions/checkout@v4
       - name: Setup.NET

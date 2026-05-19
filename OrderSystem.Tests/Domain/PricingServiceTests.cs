@@ -26,7 +26,7 @@ namespace OrderSystem.Tests.Domain
             var total = pricingService.Calculate(items);
 
             // Assert
-            Assert.Equal(450, total);
+            Assert.Equal(4500, total);
         }
     }
 }

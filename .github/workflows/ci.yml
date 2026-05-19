@@ -19,7 +19,7 @@ jobs:
 
 
 
-  test:
+  unit-test:
     runs-on: windows-latest
     needs: build
     steps:  
@@ -30,4 +30,18 @@ jobs:
            dotnet-version: 8.0.x
 
       - run: dotnet restore
-      - run: dotnet test --configuration Debug
+      - run: dotnet test --filter "Category=Unit"
+       
+
+  int-test:
+    runs-on: windows-latest
+    needs: unit-tests
+    steps:  
+      - uses: actions/checkout@v4
+      - name: Setup.NET
+        uses: actions/setup-dotnet@v4
+        with: 
+           dotnet-version: 8.0.x
+
+      - run: dotnet restore
+      - run: dotnet test --filter "Category=Integration"

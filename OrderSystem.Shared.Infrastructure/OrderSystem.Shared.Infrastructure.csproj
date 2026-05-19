@@ -1,0 +1,10 @@
+
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OrderSystem.Notifications.Application\OrderSystem.Notifications.Application.csproj" />
+    <ProjectReference Include="..\OrderSystem.Shared.Application\OrderSystem.Shared.Application.csproj" />
+  </ItemGroup>
+</Project>

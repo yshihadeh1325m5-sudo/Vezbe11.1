@@ -1,0 +1,7 @@
+
+REFERENCES:
+- OrderSystem.Pricing
+- OrderSystem.Persistence.Application
+- OrderSystem.Notifications.Application
+- OrderSystem.Shared.Application
+- OrderSystem.SharedKernel

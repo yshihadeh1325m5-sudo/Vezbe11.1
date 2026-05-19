@@ -1,0 +1,11 @@
+
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OrderSystem.Orders\OrderSystem.Orders.csproj" />
+    <ProjectReference Include="..\OrderSystem.Persistence.Application\OrderSystem.Persistence.Application.csproj" />
+    <ProjectReference Include="..\OrderSystem.Shared.Infrastructure\OrderSystem.Shared.Infrastructure.csproj" />
+  </ItemGroup>
+</Project>
